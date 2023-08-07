@@ -1,0 +1,17 @@
+.taskcard {
+  margin: 10px;
+  padding-block: 10px;
+  background-color: tomato;
+  border-radius: 6px;
+  cursor: grab;
+}
+.taskcard:active {
+  cursor: grabbing;
+  animation: rotateBorder 2s ease infinite;
+  opacity: 0.8;
+}
+@keyframes rotateBorder {
+  to {
+    opacity: 1;
+  }
+}
